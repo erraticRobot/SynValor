@@ -93,11 +93,81 @@
 
               <a href="#" class="btn" id="sign-up">sign up</a>
             </div>
-            <button id="nav-btn">
+            <!-- nav open/close btns -->
+            <button id="nav-btn" class="active nav-btn">
               <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="nav-exit-btn" class="nav-exit-btn">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
         </div>
+        <aside id="sidebar" class="sidebar">
+          <div class="sidebar-center">
+            <article class="sidebar-navigation">
+              <!-- nav-single -->
+              <div class="sidebar-nav-single">
+                <p class="sidebar-nav-title">products</p>
+                <button class="sidebar-nav-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- nav-single end -->
+              <!-- nav-single -->
+              <div class="sidebar-nav-single">
+                <p class="sidebar-nav-title">solutions</p>
+                <button class="sidebar-nav-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- nav-single end -->
+              <!-- nav-single -->
+              <div class="sidebar-nav-single">
+                <p class="sidebar-nav-title">developers</p>
+                <button class="sidebar-nav-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- nav-single end -->
+              <!-- nav-single -->
+              <div class="sidebar-nav-single">
+                <p class="sidebar-nav-title">businesses</p>
+                <button class="sidebar-nav-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- nav-single end -->
+              <!-- nav-single -->
+              <div class="sidebar-nav-single">
+                <p class="sidebar-nav-title">pricing</p>
+                <button class="sidebar-nav-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- nav-single end -->
+            </article>
+            <!-- sidebar login signup -->
+            <article class="user-btn-cont">
+              <button class="btn white-btn sidebar-login">log in</button>
+              <button class="btn sidebar-signup">sign up</button>
+            </article>
+            <!-- sidebar footer -->
+            <article class="sidebar-footer">
+              <button class="btn white-btn" id="sidebar-footer-btn">
+                blog
+              </button>
+              <button class="btn white-btn" id="sidebar-footer-btn">
+                docs
+              </button>
+              <button class="btn white-btn" id="sidebar-footer-btn">
+                get support
+              </button>
+              <button class="btn white-btn" id="sidebar-footer-btn">
+                sales
+              </button>
+            </article>
+          </div>
+        </aside>
       </nav>
       <!-- HERO -->
       <header class="hero">
@@ -843,5 +913,6 @@
         </div>
       </article>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

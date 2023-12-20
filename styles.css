@@ -348,6 +348,17 @@ img:not(.logo) {
   background: transparent;
   border: none;
 }
+.nav-btn {
+  display: none;
+}
+.nav-exit-btn {
+  display: none;
+  border-color: transparent;
+  background: transparent;
+  font-size: 1.75rem;
+  color: var(--grey-300);
+  transition: var(--transition);
+}
 .nav-end {
   display: flex;
   justify-content: center;
@@ -487,6 +498,7 @@ img:not(.logo) {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1.25rem;
+  margin-top: 3rem;
 }
 /* .hero-title span {
   display: block;
@@ -875,7 +887,7 @@ TODO:
 .tool-text {
   max-width: unset;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 987px) {
   .tools-cont {
     grid-template-columns: 1fr 1fr;
     place-content: center;
@@ -930,6 +942,7 @@ TODO:
   box-shadow: var(--shadow-2);
   padding: 1.25rem;
   transition: var(--transition);
+  border-radius: var(--border-radius);
 }
 .product:hover {
   box-shadow: var(--shadow-3);
@@ -1098,9 +1111,13 @@ TODO:
 .footer-nav-link {
   padding-left: 0.15rem;
 }
+.footer-nav-link:hover a {
+  color: var(--grey-200);
+}
 .footer-nav-link a {
   color: var(--grey-400);
   text-transform: capitalize;
+  transition: var(--transition);
 }
 .footer-nav-link-header p {
   font-weight: bold;
@@ -1155,7 +1172,12 @@ TODO:
 }
 .footer-social-links i {
   font-size: 1.5rem;
+  cursor: pointer;
   color: var(--grey-400);
+  transition: var(--transition);
+}
+.footer-social-links i:hover {
+  color: var(--primary-500);
 }
 @media screen and (min-width: 749px) {
   .footer-top {
@@ -1188,4 +1210,69 @@ TODO:
     width: unset;
     margin: 0;
   }
+}
+
+/* ==================================== SIDEBAR ====================================== */
+.sidebar {
+  display: none;
+}
+.active {
+  display: inline-block;
+}
+.sidebar-center {
+  width: 95%;
+  margin: 0 auto;
+}
+.sidebar-navigation {
+  margin-bottom: 2rem;
+}
+.sidebar-nav-single {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey-100);
+  padding: 0.65rem 0;
+}
+.sidebar-nav-title {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--grey-400);
+}
+.sidebar-nav-btn {
+  border-color: transparent;
+  background: transparent;
+}
+.sidebar-nav-btn i {
+  color: var(--grey-200);
+  font-size: 0.75rem;
+}
+.user-btn-cont {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.sidebar-signup {
+}
+.sidebar-login {
+  border: 1px solid var(--grey-200);
+  color: var(--grey-400);
+  text-transform: capitalize;
+}
+.sidebar-login,
+.sidebar-signup {
+  width: 100%;
+}
+.sidebar-footer {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 3rem;
+}
+#sidebar-footer-btn {
+  border: 1px solid var(--grey-200);
+}
+#sidebar-footer-btn:hover {
+  border-color: var(--primary-500);
+  background: transparent;
+  color: var(--primary-500);
 }
