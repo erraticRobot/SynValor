@@ -16,4 +16,12 @@ navExitBtn.addEventListener("click", (e) => {
   body[0].style.overflow = "unset";
 });
 
-console.log(body);
+window.addEventListener("resize", () => {
+  if (sidebar.classList.contains("active") && window.innerWidth >= 1178) {
+    sidebar.classList.toggle("active");
+    navBtn.classList.toggle("active");
+    navExitBtn.classList.toggle("active");
+    body[0].style.overflow = "unset";
+  }
+  console.log(window.innerWidth);
+});

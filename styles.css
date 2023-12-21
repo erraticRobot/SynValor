@@ -1242,6 +1242,7 @@ TODO:
 .sidebar-nav-btn {
   border-color: transparent;
   background: transparent;
+  cursor: pointer;
 }
 .sidebar-nav-btn i {
   color: var(--grey-200);
@@ -1275,4 +1276,9 @@ TODO:
   border-color: var(--primary-500);
   background: transparent;
   color: var(--primary-500);
+}
+@media screen and (min-width: 792px) {
+  .user-btn-cont {
+    display: none;
+  }
 }
