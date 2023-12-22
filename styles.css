@@ -1031,6 +1031,9 @@ TODO:
   padding-bottom: 6rem;
   margin-bottom: 5rem;
 }
+.get-started .section-info {
+  color: var(--grey-500);
+}
 .get-started-section-center {
   display: grid;
   place-content: center;
